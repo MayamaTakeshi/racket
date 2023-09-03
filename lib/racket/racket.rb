@@ -152,6 +152,8 @@ class Racket
         # BSD
         s.setsockopt(Socket::IPPROTO_IP, Socket::IP_HDRINCL, true)
       end
+      # Takeshi: set specific network interface
+      s.setsockopt(Socket::SOL_SOCKET, Socket::SO_BINDTODEVICE, @iface)
     rescue Errno::EPERM
       raise ArgumentError, "Must run #{$0} as root."
     end
