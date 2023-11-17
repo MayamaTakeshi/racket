@@ -2,11 +2,11 @@
 
 require 'rubygems'
 SPEC = Gem::Specification.new do |s|
-  s.name = "racket"
-  s.version = "1.0.12"
-  s.author = "Jon Hart"
-  s.email = "jhart@spoofed.org"
-  s.homepage = "http://spoofed.org/files/racket/"
+  s.name = "mt_racket"
+  s.version = "1.0.12a"
+  s.authors = ["Jon Hart", "Mayama Takeshi"]
+  s.email = "mayamatakeshi@gmail.com"
+  s.homepage = "http://github.com/MayamaTakeshi/racket"
   s.description = "Ruby Gem for reading and writing raw packets"
   s.platform = Gem::Platform::RUBY
   s.summary = s.description
